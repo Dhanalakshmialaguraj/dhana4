@@ -59,7 +59,7 @@ class TransferThread extends Thread {
         for (int i = 0; i < iterations; i++) {
             int fromIndex = random.nextInt(accounts.size());
             int toIndex = random.nextInt(accounts.size());
-            double amount = 10 + (1000 * random.nextDouble());
+            double amount = 10 + (100 * random.nextDouble());
             accounts.get(fromIndex).transferTo(accounts.get(toIndex), amount);
 
             try {
