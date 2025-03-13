@@ -75,7 +75,7 @@ public class BankSimulation {
     public static void main(String[] args) {
         List<BankAccount> accounts = new ArrayList<>();
         for (int i = 1; i <= 5; i++) {
-            accounts.add(new BankAccount(i, 10000.0));
+            accounts.add(new BankAccount(i, 100.0));
         }
 
         List<Thread> threads = new ArrayList<>();
